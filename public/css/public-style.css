@@ -1,0 +1,118 @@
+/* Estilos gerais */
+.secure-dacast-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+/* Estilos para conteúdo protegido */
+.secure-dacast-content {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Formulários */
+.secure-dacast-form {
+    margin: 20px 0;
+}
+
+.secure-dacast-form input[type="text"],
+.secure-dacast-form input[type="password"],
+.secure-dacast-form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.secure-dacast-button {
+    background-color: #0073aa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.secure-dacast-button:hover {
+    background-color: #005177;
+}
+
+/* Mensagens */
+.secure-dacast-message {
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+}
+
+.secure-dacast-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.secure-dacast-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .secure-dacast-container {
+        padding: 10px;
+    }
+
+    .secure-dacast-content {
+        padding: 15px;
+    }
+
+    .secure-dacast-button {
+        width: 100%;
+    }
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.secure-dacast-fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Links */
+.secure-dacast-link {
+    color: #0073aa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.secure-dacast-link:hover {
+    color: #005177;
+    text-decoration: underline;
+}
+
+/* Títulos */
+.secure-dacast-title {
+    color: #23282d;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.secure-dacast-subtitle {
+    color: #464646;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}

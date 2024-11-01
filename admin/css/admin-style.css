@@ -1,0 +1,212 @@
+/* Admin Styles para Plugin de Segurança */
+
+/* Variáveis globais */
+:root {
+    --primary-color: #0073aa;
+    --secondary-color: #005177;
+    --success-color: #46b450;
+    --error-color: #dc3232;
+    --warning-color: #ffb900;
+    --text-color: #333;
+    --border-color: #ddd;
+}
+
+/* Reset e estilos base */
+.secure-dacast-admin {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/* Header da página admin */
+.secure-dacast-header {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.secure-dacast-header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Container principal */
+.secure-dacast-container {
+    background: white;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Formulários */
+.secure-dacast-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 1px var(--primary-color);
+    outline: none;
+}
+
+/* Botões */
+.secure-dacast-button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.secure-dacast-button:hover {
+    background: var(--secondary-color);
+}
+
+.secure-dacast-button.delete {
+    background: var(--error-color);
+}
+
+.secure-dacast-button.delete:hover {
+    background: #b32d2d;
+}
+
+/* Tabelas */
+.secure-dacast-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.secure-dacast-table th,
+.secure-dacast-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.secure-dacast-table th {
+    background: #f5f5f5;
+    font-weight: 600;
+}
+
+.secure-dacast-table tr:hover {
+    background: #f9f9f9;
+}
+
+/* Mensagens de feedback */
+.secure-dacast-message {
+    padding: 12px 15px;
+    margin: 15px 0;
+    border-radius: 3px;
+    border-left: 4px solid;
+}
+
+.secure-dacast-message.success {
+    background: #f0f8f0;
+    border-left-color: var(--success-color);
+}
+
+.secure-dacast-message.error {
+    background: #fef7f7;
+    border-left-color: var(--error-color);
+}
+
+.secure-dacast-message.warning {
+    background: #fff8e5;
+    border-left-color: var(--warning-color);
+}
+
+/* Cards */
+.secure-dacast-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.secure-dacast-card-header {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+/* Tooltips */
+.secure-dacast-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+.secure-dacast-tooltip .tooltip-text {
+    visibility: hidden;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.secure-dacast-tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
+/* Responsividade */
+@media screen and (max-width: 782px) {
+    .secure-dacast-container {
+        padding: 15px;
+    }
+
+    .secure-dacast-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"],
+    .form-group textarea,
+    .form-group select {
+        font-size: 16px; /* Previne zoom em iOS */
+    }
+}
